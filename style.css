@@ -1,0 +1,192 @@
+/* reset
+--------------*/
+*,*:before,*::after
+{
+    margin: 0;padding: 0;
+    box-sizing: border-box;-webkit-box-sizing:border-box;
+}
+
+body
+{
+    font-family:'Open Sans', sans-serif; 
+    font-size:inherit;
+}
+
+input, select, iframe, button
+{
+    border:none;
+     font-family:'Open Sans', sans-serif;
+}
+
+h1,h2,h3
+{
+    margin:0;
+    padding:0;
+}
+ol,ul
+{
+    list-style: none;
+}
+a{text-decoration:none; color: inherit;}
+
+a:hover{color:#f9014d;font-size: 20px}
+
+#searchicon
+{
+    width: 35px;
+  
+    
+}
+
+/* gerais
+--------------*/
+.section
+{
+    float: left;
+    width: 100%;
+}
+
+/* header
+--------------*/
+.header
+{
+    display:
+}
+
+
+
+/* search e estastiticas
+--------------*/
+
+.search-box
+{
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+    background-image: url(/inputs/images/bg-search.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.search-box h1
+{
+    font-size: 37px;
+    font-weight: bold;
+}
+.search-box .tagline
+{
+    font-size: 26px;
+}
+.search-box form
+{
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    max-width: 500px;
+    margin-top: 40px;
+}
+.search-box form input[type="search"]
+{
+    width: 100%;
+    height:50px;
+    font-size: inherit;
+    color: #a70606;
+    padding: 0px 70px 0 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 10px;
+}
+.search-box form button
+{
+    background: #a70606; 
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    top: 0;
+    right: 0;
+    cursor:pointer;
+    border-top-right-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+}
+
+/*----- estatisticas
+----------------*/
+
+.estatisticas
+{
+    background: #fff;
+    max-width: 960px;
+    width: 90%;
+    padding: 30px 0;
+    margin: -40px auto 0 auto;
+    text-align: center;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,.3);
+}
+
+.estatisticas-item span
+{
+    font-size: 33px;
+    font-weight: bold;
+
+}
+
+.estatisticas-item p
+{
+    font-size: 20px;
+}
+
+/*----- BREAKPOINTS MAXIMOS
+----------------*/
+
+@media(max-width:767.9px)
+{
+    .estatisticas
+    {
+        flex-direction: column;
+    }
+    .estatisticas-item
+    {
+        min-width: 90%;
+    }
+    .estatisticas-item:not(:last-of-type)
+    {
+        min-width: 90%;
+        margin-bottom: 15px;
+        padding: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+/*----- BREAKPOINTS MAXIMOS
+----------------*/
+@media(min-width:768px)
+{
+    .search-box
+    {
+        padding: 200px 0;
+    }
+    .estatisticas
+    {
+        margin-top: -65px;
+    }
+    .estatisticas-item
+    {
+        text-align: center;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+    .estatisticas-item:not(:last-of-type)
+    {
+        border-right: 1px solid #ccc;
+    }
+}
