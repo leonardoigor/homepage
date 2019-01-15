@@ -129,7 +129,12 @@ img
     z-index: 2;
     -webkit-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
+    -webkit-transform: translate(0,50%);
     transform: translate(0,50%);
+}
+.box-detalhes-info h1
+{
+    font-size: 20px;
 }
 .box:hover .box-cover img
 {
