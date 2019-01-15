@@ -35,11 +35,12 @@ a:hover{color:#f9014d;font-size: 20px}
 
 #searchicon
 {
-    width: 35px;
-  
-    
+    width: 35px;    
 }
-
+img
+{
+    max-width: 100%;border: none;
+}
 
 
 /* gerais
@@ -49,6 +50,17 @@ a:hover{color:#f9014d;font-size: 20px}
     float: left;
     width: 100%;
 }
+.section-header
+{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+.section-header h1
+{
+    font-size: 38px;
+    font-weight: normal;
+}
 
 .content
 {
@@ -56,8 +68,75 @@ a:hover{color:#f9014d;font-size: 20px}
     width: 90%;
     margin: 0 auto;
 }
+.row
+{
+    float: left;
+    width: 100%;
+}
 
 /* header
+--------------*/
+
+/* BOX
+-------------*/
+.box
+{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    width: 400px;
+}
+.box .box-name
+{
+    position:absolute;
+    z-index: 2;
+    left: 10px;
+    top: 10px;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 10px;
+    background: #f9014d;
+    border-radius: 5px;
+}
+.box .box-cover
+{
+    font-size: 0;
+    line-height: 1em;
+}
+.box .box-cover img
+{
+    width: 100%;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all 1000ms ease-in-out;
+    transition: all 1000ms ease-in-out;
+}
+.box .box-detalhes
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+    color: #fff;
+    font-size: 15px;
+}
+.box-detalhes-info
+{
+    position: relative;
+    z-index: 2;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    transform: translate(0,50%);
+}
+.box:hover .box-cover img
+{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+/*FIm box
 --------------*/
 .header
 {
