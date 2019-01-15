@@ -28,10 +28,7 @@ ol,ul
     list-style: none;
 }
 
-li
-{
-    color: black;
-}
+
 a{text-decoration:none; color: inherit;}
 
 a:hover{color:#f9014d;font-size: 20px}
@@ -175,6 +172,10 @@ a:hover{color:#f9014d;font-size: 20px}
 {
     /*menu
     ------------*/
+    li
+{
+    color: black;
+}
     .header .nave.active
     {
         right: 0;
@@ -229,6 +230,34 @@ a:hover{color:#f9014d;font-size: 20px}
 ----------------*/
 @media(min-width:768px)
 {
+ 
+
+    .nav-toggle,.nav-close
+    {
+        display:none ;
+    }
+
+    .header .nave
+    {
+        float: right;
+        margin: 20px;
+    }
+
+    .header .nave ul li
+    {
+        display: inline-block;
+        margin-left: 20px;
+
+    }
+    .header .nave ul li a
+    {
+        color:white;
+    }
+    .header .nave ul li a:hover
+    {
+        color: #a70606;
+    }
+
     .search-box
     {
         padding: 200px 0;
