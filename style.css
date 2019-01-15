@@ -250,12 +250,12 @@ a:hover{color:#f9014d;font-size: 20px}
     }
 }
 
+
 /* Auxiliar
 --------------*/
 
-.text-center{text-align: center;};
-.text-left{text-align: left;};
-.text-right{text-align: right;};
-
-.fl-left{float: left;};
-.fl-right{float: right;};
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.fl-left{float: left;}
+.fl-right{float: right;}
