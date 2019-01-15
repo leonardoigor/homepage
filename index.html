@@ -5,18 +5,27 @@
         <meta name="viewport" content="width=divice-widtg, initial-scale=1"/>
         <title>ProBarcos</title>
         <link rel="stylesheet" href="style.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
     </head>
     <body> <!-- start HAEDER-->
         <header class="header">
             <div class="content">
-                <div class="logo">
+                <div class="logo fl-left">
                     <a href="$">
-                        <img src="inputs/images/logo.png" alt="HRML e CSS Pro"/>
+                        <img src="./inputs/images/logo.png" alt="HRML e CSS Pro"/>
                     </a>
                 </div>
+                <a href="#" class="nav-toggle fl-right">
+                      <i class="material-icons">menu</i> Menu
+                </a>
                 <nav class="nave">
+                    <p class="text-right">
+                        <span class="nav-close">
+                            <i class="material-icons">close</i></span>
+                    </p>
+
                     <ul>
                         <li><a href="$">Barcos e Lanchas</a></li>
                         <li><a href="$">Destaques</a></li>
@@ -36,7 +45,7 @@
                 <form name="formsearch" method="POST" action="">
                     <input type="search" name="busca" id="busca" placeholder="Pesquisar"/>
                     <button type="submit">
-                        <img id="searchicon" src="inputs/images/plasma-search-icon.png"/>
+                        <img id="searchicon" src="./inputs/images/plasma-search-icon.png"/>
                     </button>
                 </form>
             </div>
@@ -63,5 +72,8 @@
                             </div>
         </section>
         <!--End search-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="./js/script.js"></script>
         </body>
 </html>
